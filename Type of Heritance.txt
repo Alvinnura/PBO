@@ -1,0 +1,11 @@
+default
+mewarisi ke semua anak tanpa tambahan 
+
+multiple
+kombinas mewawarisi 2 parent
+
+overriding
+anak memodifikasi properti dan metod dari parent
+
+super
+bisa mewarisi properti dari class sebelumnya dan bisa menambahkan properti

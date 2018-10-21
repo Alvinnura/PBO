@@ -1,0 +1,23 @@
+Enkapsulasi
+
+Anda dapat membatasi akses ke metode dan variabel. Hal ini dapat mencegah kecelakaan perubahan data yang dikenal sebagai enkapsulasi. 
+Contoh:
+
+class Car:
+    def __init__(self):
+        self.__updateSoftware()
+ 
+    def drive(self):
+        print 'driving'
+ 
+    def __updateSoftware(self):
+        print 'updating software'
+ 
+redcar = Car()
+redcar.drive()
+#redcar.__updateSoftware()  tidak dapat di akses dari object.
+
+untuk memanggil method yang di private, kita cukup menambahkan "_NamaClass"
+contoh:
+
+redcar._Car__updateSoftware()

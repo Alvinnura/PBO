@@ -1,0 +1,28 @@
+Class
+
+Class merupakan sebuah objek yang di dalam-nya biasanya terdapat beberapa metode yang memang merupakan isi dari sebuah class tersebut.
+Method/metode atau fungsi, merupakan sebuah kumpulan code program yang digunakan untuk melakukan suatu perintah.
+
+Contoh:
+class namaClass () :
+    def metode 1 (self) :
+        Isi metode
+    def metode 2 (self) :
+        Isi metode
+        
+        
+Untuk memanggil sebuah class, sama seperti memanggil metode, kita cukup menyebutkan nama classnya dengan di akhiri dengan tanda kurung buka dan tutup.
+Contoh:
+
+namaClass()
+
+Untuk memanggil metodenya, kita cukup menggunakan memanggil class yang di ikuti dengan pemanggilan nama metode dari di dalam class tersebut yang di pisahkan oleh tanda titik.
+Contoh:
+
+namaClass().namaMetode()
+
+Namun, untuk memudahkan pemanggilan metode ini, kita bisa menampung class nya ke dalam sebuah variabel. Kemudian kita panggil metodenya.
+Contoh:
+
+penampung = namaClass()
+penampung.namaMetode()

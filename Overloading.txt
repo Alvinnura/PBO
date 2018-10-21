@@ -1,0 +1,35 @@
+Overloading
+
+Overloading merupakan salah satu konsep dalam Pemrogramaan Berorientasi Objek dimana dalam suatu class terdapat method dengan nama yang sama namun tetapi memiliki berbagai fungsi yang berbeda, tergantung dari parameter yang digunakan.
+Contoh:
+
+# Fungsi untuk beberapa argumen 
+def add(tipe_data, *args): 
+  
+    # Bila tipe data bernilai int 
+    # Maka a bernilai 0 
+    if tipe_data == 'int': 
+        a = 0
+          
+    # Bila tipe data bernilai str 
+    # Maka a bernilai '' (nilai kosong)
+    if tipe_data =='str': 
+        a ='' 
+  
+    # Untuk int atau str dalam argumen 
+    for x in args: 
+  
+        # Fungsi ini untuk menambahkan 
+        # nilai argumen(args) kepada nilai a   
+        # tergantung dari jenis tipe_data-nya (harus sama)
+        a = a + x 
+  
+    print(a) 
+  
+# Integer 
+add('int', 2, 3) 
+  
+# String 
+add('str', 'Halo', 'Semua')
+
+# Memanggil method yang sama namun parameter yang digunakan berbeda

@@ -1,0 +1,47 @@
+Inheritance
+
+Inheritance atau Pewarisan/Penurunan adalah konsep pemrograman dimana sebuah class dapat ‘menurunkan’ property dan method yang dimilikinya kepada class lain.
+Contoh:
+
+class unggas :
+    def sifatUnggas(self) :
+        print ("Bertelur")
+        print ("Bersayap")
+
+class bebek(unggas) :
+    def sifatBebek(self) : 
+        print ("Berenang")
+
+class burung(unggas) :
+    def sifatBurung(unggas) :
+        print ("Terbang")
+
+class ayam(unggas) :
+    def sifatAyam(self) :
+        print ("Berkokok")
+
+#inisialisasi
+unggas = unggas()
+ayam = ayam()
+bebek = bebek()
+burung = burung()
+
+
+print ("Unggas itu : ")
+unggas.sifatUnggas()
+print
+print()
+print ("Ayam itu : ")
+ayam.sifatUnggas()
+ayam.sifatAyam()
+print
+print()
+print ("Bebek itu : ")
+bebek.sifatUnggas()
+bebek.sifatBebek()
+print
+print()
+print ("Burung itu : ")
+burung.sifatUnggas()
+burung.sifatBurung()
+print
